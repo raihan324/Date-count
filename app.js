@@ -1,13 +1,17 @@
 let sDate = document.getElementById('sDate')
 let eDate = document.getElementById('eDate')
-let name = document.getElementById('name')
+let names = document.getElementById('name')
 console.log(sDate)
 let show = document.getElementById('show')
-name.addEventListener("input", function(val) {
+sDate.addEventListener("input", function(val) {
     console.log(show)
-    show.value = name.value
+    show.value = sDate.value
 })
 
 document.getElementById('form').addEventListener('submit', function(val){
     val.preventDefault()
+    let startDate = sDate.value
+    let endDate = eDate.value
+    console.log(typeof(startDate))
+    console.log(endDate)
 })
